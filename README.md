@@ -1,3 +1,3 @@
-# Java
-going to learn Java
+# Javascript
+going to learn Javascript
 
