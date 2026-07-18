@@ -1,2 +1,4 @@
-# Javascript
-going to learn javascript
+# Java
+going to learn Java
+# Python
+going to learn Python
