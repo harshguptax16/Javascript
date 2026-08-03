@@ -1,3 +1,3 @@
-# Javascript
-going to learn Javascript
+# HTML, CSS and Javascript
+going to learn HTML, CSS and Javascript
 
