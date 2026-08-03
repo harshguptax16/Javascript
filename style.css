@@ -1,41 +1,63 @@
-/* Hero Section with Background Image */
-header {
-    height: 70vh; /* Increased height slightly for better visual impact */
+body {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffc2dd;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Prevents scrollbars from the moving button */
+}
+
+.container {
     text-align: center;
     padding: 20px;
-    margin-top: 50px;
-
-    /* Background Image Settings */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                      url('Men.jpg'); /* Replace with your image link or filename */
-    background-size: cover;       /* Ensures the image fills the entire area */
-    background-position: center;  /* Keeps the center of the image visible */
-    background-attachment: fixed; /* Optional: Creates a cool parallax scrolling effect */
-    color: white; 
-}
-.social-links {
-    margin-bottom: 15px;
+    background-color: #ffadad;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
 }
 
-.social-links a {
-    color: #ecf0f1; /* Light grey/white */
-    font-size: 1.8rem; /* Icon size */
-    margin: 0 15px;
-    text-decoration: none;
-    transition: transform 0.3s, color 0.3s;
-    display: inline-block;
+h1 {
+    color: #d62828;
+    margin-bottom: 20px;
 }
 
-/* Hover Effects */
-.social-links a:hover {
-    transform: translateY(-5px); /* Gentle float up */
+#gif-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-/* Specific Brand Colors on Hover (Optional but looks pro) */
-.social-links a[aria-label="Instagram"]:hover { color: #E4405F; }
-.social-links a[aria-label="Telegram"]:hover { color: #0088cc; }
-.social-links a[aria-label="LinkedIn"]:hover { color: #0077B5; }
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#yesBtn {
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+    right: 20%; 
+}
+
+#noBtn {
+    background-color: #ff1212;
+    color: white;
+    position: absolute;
+    /* Initial position for the moving button */
+    transition: all 0.4s ease;
+    left: 52%; 
+}
