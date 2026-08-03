@@ -1,0 +1,41 @@
+/* Hero Section with Background Image */
+header {
+    height: 70vh; /* Increased height slightly for better visual impact */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+
+    /* Background Image Settings */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('Men.jpg'); /* Replace with your image link or filename */
+    background-size: cover;       /* Ensures the image fills the entire area */
+    background-position: center;  /* Keeps the center of the image visible */
+    background-attachment: fixed; /* Optional: Creates a cool parallax scrolling effect */
+    color: white; 
+}
+.social-links {
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    color: #ecf0f1; /* Light grey/white */
+    font-size: 1.8rem; /* Icon size */
+    margin: 0 15px;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+/* Hover Effects */
+.social-links a:hover {
+    transform: translateY(-5px); /* Gentle float up */
+}
+
+/* Specific Brand Colors on Hover (Optional but looks pro) */
+.social-links a[aria-label="Instagram"]:hover { color: #E4405F; }
+.social-links a[aria-label="Telegram"]:hover { color: #0088cc; }
+.social-links a[aria-label="LinkedIn"]:hover { color: #0077B5; }
